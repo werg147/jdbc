@@ -1,6 +1,6 @@
 package com.javaex.book01;
 
-public class BookVo extends AuthorVo {
+public class BookVo {
 
 	// 필드
 	private int bookId;
@@ -8,6 +8,8 @@ public class BookVo extends AuthorVo {
 	private String pubs;
 	private String pubDate;
 	private int authorId;
+	private String authorName;
+	private String authorDesc;
 
 	// 생성자
 	public BookVo() {
@@ -35,8 +37,8 @@ public class BookVo extends AuthorVo {
 		this.pubs = pubs;
 		this.pubDate = pubDate;
 		this.authorId = authorId;
-		super.authorName = authorName;
-		super.authorDesc = authorDesc;
+		this.authorName = authorName;
+		this.authorDesc = authorDesc;
 	}
 
 	// 메소드 gs
@@ -78,6 +80,22 @@ public class BookVo extends AuthorVo {
 
 	public void setAuthorId(int authorId) {
 		this.authorId = authorId;
+	}
+
+	public String getAuthorName() {
+		return authorName;
+	}
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+
+	public String getAuthorDesc() {
+		return authorDesc;
+	}
+
+	public void setAuthorDesc(String authorDesc) {
+		this.authorDesc = authorDesc;
 	}
 
 	// 메소드 일반
